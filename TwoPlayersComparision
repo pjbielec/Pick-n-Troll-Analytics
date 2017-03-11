@@ -32,7 +32,7 @@ public class App {
 				}
 
 				System.out.print(statsNames[i] + " " + playerStats[number][i] + "   ");
-								
+							 
 			}
 			
 			
