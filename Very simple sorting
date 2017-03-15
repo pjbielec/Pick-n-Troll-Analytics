@@ -1,0 +1,47 @@
+
+public class App {
+	public static void main(String[] args) {
+
+		// Sprawdzic jak sie robi Scanner
+		// Scanner in = new Scanner()
+
+		int tab[] = new int[8];
+		tab[0] = 2;
+		tab[1] = 5;
+		tab[2] = 1;
+		tab[3] = 3;
+		tab[4] = 30;
+		tab[5] = 21;
+		tab[6] = 21;
+		tab[7] = 17;
+
+		for (int i = 0; i < tab.length; i++) {
+			System.out.print(tab[i] + "\t");
+		}
+		
+		System.out.println();
+		System.out.println("sortowanie");
+
+		for (int i = 0; i < tab.length; i++) {
+
+			for (int j = 0; j < tab.length-1; j++) {
+
+				if (tab[j] > tab[j + 1]) {
+					
+					int a;
+					a = tab[j];
+					tab[j] = tab[j + 1];
+					tab[j + 1] = a;
+
+				}
+
+			}
+
+		}
+
+		for (int i = 0; i < tab.length; i++) {
+			System.out.print(tab[i] + "\t");
+		}
+
+	}
+}
